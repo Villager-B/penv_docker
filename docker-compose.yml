@@ -1,0 +1,11 @@
+version: '3'
+services:
+  py379:
+    build: ./
+    container_name: py379
+    volumes:
+      - ./works:/home/research/works
+    ports:
+      - 10027:10027
+    tty: true
+    stdin_open: true
